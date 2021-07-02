@@ -8,10 +8,12 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using Microsoft.AspNetCore.Authorization;
 
 namespace api_rest.Controllers
 {
     [Route("/api/[Controller]")]
+    [Authorize()]
     public class CategoriesController : Controller
     {
        private readonly ICategoryService _categoryService;
@@ -24,7 +26,7 @@ namespace api_rest.Controllers
         }
 
         [HttpGet]
-        public async Task<IEnumerable<CategoryResources>> GetAllAsyn()
+        public async Task<IEnumerable<CategoryResources>> GetAllAsync()
         {
             var categories = await _categoryService.ListAsync();
             var resources = _mapper.Map<IEnumerable<Category>, IEnumerable<CategoryResources>>(categories);

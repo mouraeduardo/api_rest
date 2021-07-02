@@ -13,6 +13,8 @@ namespace api_rest.Mapping
         public ModelToResourceProfile()
         {
             CreateMap<Category, CategoryResources>();
+            CreateMap<Product, ProductResources>();
+            CreateMap<User, UserResources>();
         }
     }
 }

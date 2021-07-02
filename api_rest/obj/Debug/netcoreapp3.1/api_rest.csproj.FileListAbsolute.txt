@@ -18,12 +18,10 @@ C:\Users\eduar\source\repos\api_rest\api_rest\obj\Debug\netcoreapp3.1\api_rest.R
 C:\Users\eduar\source\repos\api_rest\api_rest\obj\Debug\netcoreapp3.1\api_rest.dll
 C:\Users\eduar\source\repos\api_rest\api_rest\obj\Debug\netcoreapp3.1\api_rest.pdb
 C:\Users\eduar\source\repos\api_rest\api_rest\obj\Debug\netcoreapp3.1\api_rest.genruntimeconfig.cache
-C:\Users\eduar\source\repos\api_rest\api_rest\bin\Debug\netcoreapp3.1\Humanizer.dll
 C:\Users\eduar\source\repos\api_rest\api_rest\bin\Debug\netcoreapp3.1\Microsoft.Data.Sqlite.dll
 C:\Users\eduar\source\repos\api_rest\api_rest\bin\Debug\netcoreapp3.1\Microsoft.DotNet.PlatformAbstractions.dll
 C:\Users\eduar\source\repos\api_rest\api_rest\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.dll
 C:\Users\eduar\source\repos\api_rest\api_rest\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.Abstractions.dll
-C:\Users\eduar\source\repos\api_rest\api_rest\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.Design.dll
 C:\Users\eduar\source\repos\api_rest\api_rest\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.InMemory.dll
 C:\Users\eduar\source\repos\api_rest\api_rest\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.Relational.dll
 C:\Users\eduar\source\repos\api_rest\api_rest\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.Sqlite.dll
@@ -48,3 +46,13 @@ C:\Users\eduar\source\repos\api_rest\api_rest\bin\Debug\netcoreapp3.1\System.Tex
 C:\Users\eduar\source\repos\api_rest\api_rest\obj\Debug\netcoreapp3.1\api_rest.csproj.CopyComplete
 C:\Users\eduar\source\repos\api_rest\api_rest\bin\Debug\netcoreapp3.1\AutoMapper.dll
 C:\Users\eduar\source\repos\api_rest\api_rest\bin\Debug\netcoreapp3.1\AutoMapper.Extensions.Microsoft.DependencyInjection.dll
+C:\Users\eduar\source\repos\api_rest\api_rest\bin\Debug\netcoreapp3.1\Humanizer.dll
+C:\Users\eduar\source\repos\api_rest\api_rest\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.Design.dll
+C:\Users\eduar\source\repos\api_rest\api_rest\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+C:\Users\eduar\source\repos\api_rest\api_rest\bin\Debug\netcoreapp3.1\Microsoft.IdentityModel.JsonWebTokens.dll
+C:\Users\eduar\source\repos\api_rest\api_rest\bin\Debug\netcoreapp3.1\Microsoft.IdentityModel.Logging.dll
+C:\Users\eduar\source\repos\api_rest\api_rest\bin\Debug\netcoreapp3.1\Microsoft.IdentityModel.Protocols.dll
+C:\Users\eduar\source\repos\api_rest\api_rest\bin\Debug\netcoreapp3.1\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+C:\Users\eduar\source\repos\api_rest\api_rest\bin\Debug\netcoreapp3.1\Microsoft.IdentityModel.Tokens.dll
+C:\Users\eduar\source\repos\api_rest\api_rest\bin\Debug\netcoreapp3.1\Newtonsoft.Json.dll
+C:\Users\eduar\source\repos\api_rest\api_rest\bin\Debug\netcoreapp3.1\System.IdentityModel.Tokens.Jwt.dll

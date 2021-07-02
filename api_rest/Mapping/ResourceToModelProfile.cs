@@ -13,6 +13,9 @@ namespace api_rest.Mapping
         public ResourceToModelProfile()
         {
             CreateMap<SaveCategoryResources, Category>();
+            CreateMap<SaveProductResources, Product>();
+            CreateMap<SaveUserResources, User>();
+            CreateMap<AuthenticationResources, User>();
         }
     }
 }
