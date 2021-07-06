@@ -13,8 +13,8 @@ namespace api_rest.Services
 {
     public class UserService : IUserService
     {
-        private readonly IUserRepository _userRepository;
-        private readonly IUnitOfWork _unitOfWork;
+         private readonly IUserRepository _userRepository;
+         private readonly IUnitOfWork _unitOfWork;
 
         public UserService(IUserRepository userRepository, IUnitOfWork unitOfWork)
         {
@@ -102,5 +102,6 @@ namespace api_rest.Services
 
             return new UserResponse(existingUser);
         }
+
     }
 }

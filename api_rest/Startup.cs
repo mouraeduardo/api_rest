@@ -37,7 +37,7 @@ namespace api_rest
 #pragma warning restore CS0618 // O tipo ou membro é obsoleto
 
             services.AddDbContext<AppDbContext>(options => {
-                options.UseInMemoryDatabase("supermarket-api-database");
+                options.UseNpgsql(Configuration.GetConnectionString("DefaultConnection"));
            });
 
             services.AddScoped<IUnitOfWork, UnitOfWork>();
@@ -46,7 +46,7 @@ namespace api_rest
 
             services.AddScoped<IProductRepository, ProductRepository>();
             services.AddScoped<IProductService, ProductService>();
-
+             
             services.AddScoped<IUserRepository, UserRepository>();
             services.AddScoped<IUserService, UserService>();
 

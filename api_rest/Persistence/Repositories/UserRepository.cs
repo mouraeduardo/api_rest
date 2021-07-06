@@ -31,7 +31,12 @@ namespace api_rest.Persistence.Repositories
 
         public async Task<User> FirstOrDefaultAsync(string username, string password)
         {
-            return await _context.users.FirstOrDefaultAsync(x => x.Username == username);
+            var userTemp = await _context.users.FirstOrDefaultAsync(x => x.Username == username);
+
+            if (userTemp == null)
+                return userTemp;
+            else
+                return await _context.users.FirstOrDefaultAsync(x => x.Password == password);
         }
 
         public void Update(User user)
@@ -43,5 +48,6 @@ namespace api_rest.Persistence.Repositories
         {
             _context.users.Remove(user);
         }
+
     }
 }
