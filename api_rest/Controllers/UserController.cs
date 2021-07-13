@@ -26,7 +26,11 @@ namespace api_rest.Controllers
             _mapper = mapper;
         }
 
-        //[Authorize()]
+        /// <summary>
+        ///  Realiza um Listagem dos usuarios cadastrados
+        /// </summary>
+        /// <returns> lista de usuarios </returns>
+        [Authorize()]
         [HttpGet]
         public async Task<IEnumerable<UserResources>> GetAllAsync()
         {
@@ -36,6 +40,12 @@ namespace api_rest.Controllers
             return resources;
         }
 
+        /// <summary>
+        /// Realiza o cadastro de um novo usuario
+        /// </summary>
+        /// <param name="Nova Categoria"></param>
+        /// <returns>retorna dados do novo usuario</returns>
+        
         [AllowAnonymous]
         [HttpPost]
         public async Task<IActionResult> PostAsync([FromBody] SaveUserResources resources) 
@@ -58,6 +68,13 @@ namespace api_rest.Controllers
 
         }
         
+        /// <summary>
+        ///  Realiza uma atualização em um determinado usuario
+        /// </summary>
+        /// <param name="id"></param>
+        /// <param name="NovosDadosDaCategoria"></param>
+        /// <returns> retorna o usuario com dados atualizado </returns>
+
         [Authorize()]
         [HttpPut("{id}")]
         public async Task<IActionResult> PutAsync(int id, [FromBody] SaveUserResources resources)
@@ -78,6 +95,12 @@ namespace api_rest.Controllers
             var userResources = _mapper.Map<User, SaveUserResources>(result.User);
             return Ok(userResources);
         }
+
+        /// <summary>
+        /// Deleta um determinado usuario
+        /// </summary>
+        /// <param name="id"></param>
+        /// <returns> Retorna dados do usuario selecionado </returns>
 
         [Authorize()]
         [HttpDelete("{id}")]

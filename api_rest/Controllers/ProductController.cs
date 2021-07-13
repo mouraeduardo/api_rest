@@ -25,6 +25,11 @@ namespace api_rest.Controllers
             _mapper = mapper;
         }
 
+        /// <summary>
+        /// Realiza um Listagem de produtos cadastrados
+        /// </summary>
+        /// <returns> retorna Lista de produtos</returns>
+        /// <response code="200"></response>
         [HttpGet]
         public async Task<IEnumerable<ProductResources>> GetAllAsync()
         {
@@ -33,6 +38,11 @@ namespace api_rest.Controllers
             return productsResources;
         }
 
+        /// <summary>
+        /// Realiza o cadastro de novos produtos no banco de dados
+        /// </summary>
+        /// <param name="Novo Produto"></param>
+        /// <returns> dados do produto salvo </returns>
         [HttpPost]
         public async Task<ActionResult<Product>> PostAsync([FromBody] SaveProductResources resources)
         {
@@ -53,6 +63,13 @@ namespace api_rest.Controllers
             return Ok(productResourses);
         }
 
+        /// <summary>
+        ///  Realiza uma atualização no produto escolhido
+        /// </summary>
+        /// <param name="id"></param>
+        /// <param name="Novos Dados"></param>
+        /// <returns>dados atualizados do produto</returns>
+        
         [HttpPut("{id}")]
         public async Task<IActionResult> PutAsync(int id, [FromBody] SaveProductResources resources)
         {
@@ -72,6 +89,12 @@ namespace api_rest.Controllers
             var productResources = _mapper.Map<Product, ProductResources>(result.Product);
             return Ok(productResources);
         }
+
+        /// <summary>
+        /// Realizar a remoção de um produto determinado
+        /// </summary>
+        /// <param name="id"></param>
+        /// <returns> dados do produto removido </returns>
 
         [HttpDelete("{id}")]
         public async Task<IActionResult> DeleteAsync(int id)

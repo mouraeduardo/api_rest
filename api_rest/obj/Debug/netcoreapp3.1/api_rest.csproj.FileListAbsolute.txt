@@ -70,3 +70,8 @@ C:\Users\eduar\source\repos\api_rest\api_rest\bin\Debug\netcoreapp3.1\runtimes\w
 C:\Users\eduar\source\repos\api_rest\api_rest\bin\Debug\netcoreapp3.1\runtimes\unix\lib\netcoreapp2.1\System.Data.SqlClient.dll
 C:\Users\eduar\source\repos\api_rest\api_rest\bin\Debug\netcoreapp3.1\runtimes\win\lib\netcoreapp2.1\System.Data.SqlClient.dll
 C:\Users\eduar\source\repos\api_rest\api_rest\bin\Debug\netcoreapp3.1\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll
+C:\Users\eduar\source\repos\api_rest\api_rest\bin\Debug\netcoreapp3.1\Microsoft.OpenApi.dll
+C:\Users\eduar\source\repos\api_rest\api_rest\bin\Debug\netcoreapp3.1\Swashbuckle.AspNetCore.Swagger.dll
+C:\Users\eduar\source\repos\api_rest\api_rest\bin\Debug\netcoreapp3.1\Swashbuckle.AspNetCore.SwaggerGen.dll
+C:\Users\eduar\source\repos\api_rest\api_rest\bin\Debug\netcoreapp3.1\Swashbuckle.AspNetCore.SwaggerUI.dll
+C:\Users\eduar\source\repos\api_rest\api_rest\obj\Debug\netcoreapp3.1\api_rest.MvcApplicationPartsAssemblyInfo.cs

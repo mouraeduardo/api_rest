@@ -1,9 +1,4 @@
 ﻿using api_rest.Domain.Helpers;
-using System;
-using System.Collections.Generic;
-using System.ComponentModel.DataAnnotations.Schema;
-using System.Linq;
-using System.Threading.Tasks;
 
 namespace api_rest.Domain.Models
 {

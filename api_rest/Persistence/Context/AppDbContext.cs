@@ -1,9 +1,9 @@
 ﻿using api_rest.Domain.Models;
 using Microsoft.EntityFrameworkCore;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
+//using System;
+//using System.Collections.Generic;
+//using System.Linq;
+//using System.Threading.Tasks;
 //using System.ComponentModel.DataAnnotations;
 using api_rest.Domain.Helpers;
 
@@ -28,6 +28,7 @@ namespace api_rest.Persistence.Context
             builder.Entity<Category>().HasMany(p => p.Products).WithOne(p => p.Category)
                 .HasForeignKey(p => p.IdCategory);
 
+
             builder.Entity<Category>().HasData(
                 new Category { Id = 100, Name = "Fruits and Vegetables" },
                 new Category { Id = 101, Name = "Dairy" }
@@ -40,7 +41,7 @@ namespace api_rest.Persistence.Context
             builder.Entity<Product>().Property(p => p.UnitOfMeasurement);
             builder.Entity<Product>().Property(p => p.QuantityInPackge).IsRequired();
             builder.Entity<Product>().Property(p => p.IdCategory);
-            
+
 
             builder.Entity<Product>().HasData(
                 new Product 

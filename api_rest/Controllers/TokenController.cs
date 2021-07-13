@@ -7,16 +7,12 @@ using AutoMapper;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Configuration;
-using Microsoft.IdentityModel.Tokens;
 using System;
-using System.IdentityModel.Tokens.Jwt;
-using System.Security.Claims;
-using System.Text;
 using System.Threading.Tasks;
 
 namespace api_rest.Controllers
 {
-
+    
     [Route("api/[controller]")]
     public class TokenController : Controller
     {
@@ -30,6 +26,12 @@ namespace api_rest.Controllers
             _userService = userService;
             _configuration = configuration;
         }
+
+        /// <summary>
+        /// Realliza uma solicitação de login no sistema
+        /// </summary>
+        /// <param name="dados do login"></param>
+        /// <returns>Token de autenticação</returns>
         [AllowAnonymous]
         [HttpPost]
         public async Task<ActionResult> ResquestTokenAsync([FromBody] AuthenticationResources resources)

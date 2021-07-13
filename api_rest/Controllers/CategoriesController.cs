@@ -25,6 +25,11 @@ namespace api_rest.Controllers
             _mapper = mapper;
         }
 
+        /// <summary>
+        ///  Realiza um Listagem das categorias cadastrados
+        /// </summary>
+        /// <returns> lista de categorias </returns>
+
         [HttpGet]
         public async Task<IEnumerable<CategoryResources>> GetAllAsync()
         {
@@ -33,6 +38,12 @@ namespace api_rest.Controllers
 
             return resources;
         }
+
+        /// <summary>
+        /// Realiza o cadastro de um novo tipo de categoria
+        /// </summary>
+        /// <param name="Nova Categoria"></param>
+        /// <returns>retorna dados da nova categoria</returns>
 
         [HttpPost]
         public async Task<IActionResult> PostAsync([FromBody] SaveCategoryResources resources)
@@ -51,6 +62,13 @@ namespace api_rest.Controllers
             var categoryResource = _mapper.Map<Category, CategoryResources>(result.Category);
             return Ok(categoryResource);
         }
+
+        /// <summary>
+        ///  Realiza uma atualização em uma categoria determinada
+        /// </summary>
+        /// <param name="id"></param>
+        /// <param name="NovosDadosDaCategoria"></param>
+        /// <returns> retorna a categoria com dados atualizado </returns>
 
         [HttpPut("{id}")]
         public async Task<IActionResult> PutAsync(int id, [FromBody] SaveCategoryResources resources)
@@ -71,7 +89,14 @@ namespace api_rest.Controllers
             var categoryResource = _mapper.Map<Category, CategoryResources>(result.Category);
             return Ok(categoryResource);
         }
-    
+
+        /// <summary>
+        ///  Realiza uma remoção em uma categoria determinada
+        /// </summary>
+        /// <param name="id"></param>
+        /// <param name="NovosDadosDaCategoria"></param>
+        /// <returns> retorna a categoria removida </returns>
+
         [HttpDelete("{id}")]
         public async Task<IActionResult> DeleteAsync(int id)
         {

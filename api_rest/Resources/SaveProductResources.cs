@@ -12,8 +12,10 @@ namespace api_rest.Resources
         [Required]
         [MaxLength(30)]
         public string Name{ get; set; }
-        //[Required]
-        //public int IdCategory{ get; set; }
+        [Required]
+        public int IdCategory{ get; set; }
+        [Required]
+        public short QuantityInPackge { get; set; }
 
     }
 }

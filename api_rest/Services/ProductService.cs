@@ -3,10 +3,9 @@ using api_rest.Domain;
 using api_rest.Domain.Models;
 using api_rest.Domain.Repositories;
 using api_rest.Domain.Services;
-using api_rest.Persistence.Repositories;
+//using api_rest.Persistence.Repositories;
 using System;
 using System.Collections.Generic;
-using System.Linq;
 using System.Threading.Tasks;
 
 namespace api_rest.Services
