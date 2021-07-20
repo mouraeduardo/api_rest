@@ -3,7 +3,6 @@ using api_rest.Domain;
 using api_rest.Domain.Models;
 using api_rest.Domain.Repositories;
 using api_rest.Domain.Services;
-//using api_rest.Persistence.Repositories;
 using System;
 using System.Collections.Generic;
 using System.Threading.Tasks;

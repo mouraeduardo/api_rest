@@ -6,6 +6,7 @@ using AutoMapper;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
+using Swashbuckle.AspNetCore.Annotations;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -30,6 +31,7 @@ namespace api_rest.Controllers
         ///  Realiza um Listagem dos usuarios cadastrados
         /// </summary>
         /// <returns> lista de usuarios </returns>
+        [SwaggerResponse(statusCode:200 , description: "Sucesso ao listar os usuario", type : typeof(SaveUserResources))]
         [Authorize()]
         [HttpGet]
         public async Task<IEnumerable<UserResources>> GetAllAsync()
@@ -45,7 +47,7 @@ namespace api_rest.Controllers
         /// </summary>
         /// <param name="Nova Categoria"></param>
         /// <returns>retorna dados do novo usuario</returns>
-        
+        [SwaggerResponse(statusCode:200 , description: "Sucesso ao Criar um usuario", type : typeof(SaveUserResources))]
         [AllowAnonymous]
         [HttpPost]
         public async Task<IActionResult> PostAsync([FromBody] SaveUserResources resources) 
@@ -74,7 +76,7 @@ namespace api_rest.Controllers
         /// <param name="id"></param>
         /// <param name="NovosDadosDaCategoria"></param>
         /// <returns> retorna o usuario com dados atualizado </returns>
-
+        [SwaggerResponse(statusCode:200 , description: "Sucesso ao atualizar um usuario", type : typeof(SaveUserResources))]
         [Authorize()]
         [HttpPut("{id}")]
         public async Task<IActionResult> PutAsync(int id, [FromBody] SaveUserResources resources)
@@ -101,6 +103,7 @@ namespace api_rest.Controllers
         /// </summary>
         /// <param name="id"></param>
         /// <returns> Retorna dados do usuario selecionado </returns>
+        [SwaggerResponse(statusCode:200 , description: "Sucesso ao Deletar um usuario", type : typeof(SaveUserResources))]
 
         [Authorize()]
         [HttpDelete("{id}")]

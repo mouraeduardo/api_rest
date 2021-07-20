@@ -75,3 +75,4 @@ C:\Users\eduar\source\repos\api_rest\api_rest\bin\Debug\netcoreapp3.1\Swashbuckl
 C:\Users\eduar\source\repos\api_rest\api_rest\bin\Debug\netcoreapp3.1\Swashbuckle.AspNetCore.SwaggerGen.dll
 C:\Users\eduar\source\repos\api_rest\api_rest\bin\Debug\netcoreapp3.1\Swashbuckle.AspNetCore.SwaggerUI.dll
 C:\Users\eduar\source\repos\api_rest\api_rest\obj\Debug\netcoreapp3.1\api_rest.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\eduar\source\repos\api_rest\api_rest\bin\Debug\netcoreapp3.1\Swashbuckle.AspNetCore.Annotations.dll

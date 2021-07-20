@@ -7,6 +7,7 @@ using AutoMapper;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Configuration;
+using Swashbuckle.AspNetCore.Annotations;
 using System;
 using System.Threading.Tasks;
 
@@ -32,6 +33,8 @@ namespace api_rest.Controllers
         /// </summary>
         /// <param name="dados do login"></param>
         /// <returns>Token de autenticação</returns>
+        [SwaggerResponse(statusCode:200 , description: "Sucesso ao Realizar login", type: typeof(OkObjectResult))]
+
         [AllowAnonymous]
         [HttpPost]
         public async Task<ActionResult> ResquestTokenAsync([FromBody] AuthenticationResources resources)

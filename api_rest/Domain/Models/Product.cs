@@ -11,6 +11,5 @@ namespace api_rest.Domain.Models
         public int IdCategory { get; set; }
         public Category Category { get; set; }
 
-        
     }
 }

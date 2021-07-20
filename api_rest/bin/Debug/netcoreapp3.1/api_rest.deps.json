@@ -44,6 +44,8 @@
           "Npgsql.EntityFrameworkCore.PostgreSQL": "5.0.7",
           "Npgsql.EntityFrameworkCore.PostgreSQL.Design": "1.1.0",
           "Swashbuckle.AspNetCore": "6.1.4",
+          "Swashbuckle.AspNetCore.Annotations": "6.1.4",
+          "Swashbuckle.AspNetCore.Swagger": "6.1.4",
           "System.IdentityModel.Tokens.Jwt": "6.11.1",
           "Microsoft.AspNetCore.Antiforgery": "3.1.0.0",
           "Microsoft.AspNetCore.Authentication.Abstractions": "3.1.0.0",
@@ -1020,6 +1022,20 @@
           "Swashbuckle.AspNetCore.Swagger": "6.1.4",
           "Swashbuckle.AspNetCore.SwaggerGen": "6.1.4",
           "Swashbuckle.AspNetCore.SwaggerUI": "6.1.4"
+        }
+      },
+      "Swashbuckle.AspNetCore.Annotations/6.1.4": {
+        "dependencies": {
+          "Swashbuckle.AspNetCore.SwaggerGen": "6.1.4"
+        },
+        "runtime": {
+          "lib/netcoreapp3.0/Swashbuckle.AspNetCore.Annotations.dll": {
+            "assemblyVersion": "6.1.4.0",
+            "fileVersion": "6.1.4.0"
+          }
+        },
+        "compile": {
+          "lib/netcoreapp3.0/Swashbuckle.AspNetCore.Annotations.dll": {}
         }
       },
       "Swashbuckle.AspNetCore.Swagger/6.1.4": {
@@ -3950,6 +3966,13 @@
       "sha512": "sha512-aglxV+kJA5wP0RoAS8Rrh4Jp7bmVEcDAAofdSyGfea4TSEtNRLam9Fq0A4+0asUWDRk1N0/6VnuLC6+ev50wSQ==",
       "path": "swashbuckle.aspnetcore/6.1.4",
       "hashPath": "swashbuckle.aspnetcore.6.1.4.nupkg.sha512"
+    },
+    "Swashbuckle.AspNetCore.Annotations/6.1.4": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-sEAPcJ3s0XigrDWcufXmDipCxuPayEhWYo15RfN9xiPOq3G2rmH9G+wSaJwLrDJ0+xMLe+Q41cRM3TKd5E8y1A==",
+      "path": "swashbuckle.aspnetcore.annotations/6.1.4",
+      "hashPath": "swashbuckle.aspnetcore.annotations.6.1.4.nupkg.sha512"
     },
     "Swashbuckle.AspNetCore.Swagger/6.1.4": {
       "type": "package",

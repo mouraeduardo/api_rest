@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "Yy1fZ57S190WKQDg9W333vodKbM9K9EC5lZJRtgZR3Hjrhr1aj6DQ6LNj7PTT+eUB8AkiMEi/aU8J/QWMv0azw==",
+  "dgSpecHash": "ZZBmlpb+XfRs799QcKwp+tyCP0Vu5RmvextF1t1V7x7r/KkK0105rXT/ZgITNEHyfF6XkJQsSykFCDVKm9OAmg==",
   "success": true,
   "projectFilePath": "C:\\Users\\eduar\\source\\repos\\api_rest\\api_rest.Test\\api_rest.Test.csproj",
   "expectedPackageFiles": [
@@ -78,6 +78,7 @@
     "C:\\Users\\eduar\\.nuget\\packages\\runtime.win-x86.runtime.native.system.data.sqlclient.sni\\4.4.0\\runtime.win-x86.runtime.native.system.data.sqlclient.sni.4.4.0.nupkg.sha512",
     "C:\\Users\\eduar\\.nuget\\packages\\sqlitepclraw.core\\2.0.4\\sqlitepclraw.core.2.0.4.nupkg.sha512",
     "C:\\Users\\eduar\\.nuget\\packages\\swashbuckle.aspnetcore\\6.1.4\\swashbuckle.aspnetcore.6.1.4.nupkg.sha512",
+    "C:\\Users\\eduar\\.nuget\\packages\\swashbuckle.aspnetcore.annotations\\6.1.4\\swashbuckle.aspnetcore.annotations.6.1.4.nupkg.sha512",
     "C:\\Users\\eduar\\.nuget\\packages\\swashbuckle.aspnetcore.swagger\\6.1.4\\swashbuckle.aspnetcore.swagger.6.1.4.nupkg.sha512",
     "C:\\Users\\eduar\\.nuget\\packages\\swashbuckle.aspnetcore.swaggergen\\6.1.4\\swashbuckle.aspnetcore.swaggergen.6.1.4.nupkg.sha512",
     "C:\\Users\\eduar\\.nuget\\packages\\swashbuckle.aspnetcore.swaggerui\\6.1.4\\swashbuckle.aspnetcore.swaggerui.6.1.4.nupkg.sha512",

@@ -4,7 +4,6 @@ using api_rest.Domain.Models;
 using api_rest.Domain.Repositories;
 using System;
 using System.Collections.Generic;
-using System.Linq;
 using System.Threading.Tasks;
 
 namespace api_rest.Services
@@ -36,7 +35,6 @@ namespace api_rest.Services
             }
             catch (Exception ex)
             {
-                // Do some logging stuff
                 return new CategoryResponse($"an error occurred when saving the category: {ex.Message}");
             }
         }

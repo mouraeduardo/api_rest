@@ -5,9 +5,8 @@ using api_rest.Resources;
 using AutoMapper;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
-using System;
+using Swashbuckle.AspNetCore.Annotations;
 using System.Collections.Generic;
-using System.Linq;
 using System.Threading.Tasks;
 
 namespace api_rest.Controllers
@@ -30,6 +29,8 @@ namespace api_rest.Controllers
         /// </summary>
         /// <returns> retorna Lista de produtos</returns>
         /// <response code="200"></response>
+        [SwaggerResponse(statusCode:200 , description: "Sucesso ao realizar busca de produtos", type : typeof(SaveProductResources))]
+        [SwaggerResponse(statusCode: 401, description: "Usuario não Autorizado")]
         [HttpGet]
         public async Task<IEnumerable<ProductResources>> GetAllAsync()
         {
@@ -38,13 +39,17 @@ namespace api_rest.Controllers
             return productsResources;
         }
 
+
         /// <summary>
         /// Realiza o cadastro de novos produtos no banco de dados
         /// </summary>
         /// <param name="Novo Produto"></param>
         /// <returns> dados do produto salvo </returns>
+        [SwaggerResponse(statusCode:200 , description: "Sucesso ao Criar um novo produto", type : typeof(SaveProductResources))]
+        [SwaggerResponse(statusCode: 401, description: "Usuario não Autorizado")]
+
         [HttpPost]
-        public async Task<ActionResult<Product>> PostAsync([FromBody] SaveProductResources resources)
+        public async Task<IActionResult> PostAsync([FromBody] SaveProductResources resources)
         {
             if (!ModelState.IsValid)
             {
@@ -56,11 +61,11 @@ namespace api_rest.Controllers
 
             if (!result.Success)
             {
-                BadRequest(result.Message);
+                return BadRequest(result.Message);
             }
 
-            var productResourses = _mapper.Map<Product, ProductResources>(result.Product);
-            return Ok(productResourses);
+            //var productResourses = _mapper.Map<Product, ProductResources>(result.Product);
+            return Ok(result.Product);
         }
 
         /// <summary>
@@ -69,7 +74,9 @@ namespace api_rest.Controllers
         /// <param name="id"></param>
         /// <param name="Novos Dados"></param>
         /// <returns>dados atualizados do produto</returns>
-        
+        [SwaggerResponse(statusCode:200 , description: "Sucesso ao atualizar um produto", type : typeof(SaveProductResources))]
+        [SwaggerResponse(statusCode: 401, description: "Usuario não Autorizado")]
+        [SwaggerResponse(statusCode: 400, description: "Erro encontrado", type: typeof(string))]
         [HttpPut("{id}")]
         public async Task<IActionResult> PutAsync(int id, [FromBody] SaveProductResources resources)
         {
@@ -95,7 +102,9 @@ namespace api_rest.Controllers
         /// </summary>
         /// <param name="id"></param>
         /// <returns> dados do produto removido </returns>
-
+        [SwaggerResponse(statusCode: 200, description: "Sucesso ao deletar um produto", type : typeof(SaveProductResources))]
+        [SwaggerResponse(statusCode: 401, description: "Usuario não Autorizado")]
+        [SwaggerResponse(statusCode: 400, description: "Erro encontrado", type : typeof(string))]
         [HttpDelete("{id}")]
         public async Task<IActionResult> DeleteAsync(int id)
         {
